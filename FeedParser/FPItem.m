@@ -44,7 +44,7 @@
 @end
 
 @implementation FPItem
-@synthesize title, link, links, guid, description, content, pubDate, author, enclosures;
+@synthesize title, link, links, guid, description, content, pubDate, author, enclosures, category;
 @synthesize creator;
 
 + (void)initialize {
@@ -143,6 +143,7 @@
 	[creator release];
 	[author release];
 	[enclosures release];
+    [category release];
 	[super dealloc];
 }
 
